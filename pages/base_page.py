@@ -1,3 +1,4 @@
+from selenium.common import TimeoutException
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait as wait
@@ -57,3 +58,11 @@ class BasePage:
         action = ActionChains(self.driver)
         action.move_to_element(element)
         action.perform()
+
+    def element_is_not_present(self, locator, timeout=4):
+        try:
+            wait(self.driver, timeout).until(EC.invisibility_of_element_located(locator))
+        except TimeoutException:
+            return True
+        return False
+
