@@ -21,4 +21,6 @@ class MainPageLocators:
     # link
     ORDER_LINK = (By.XPATH, '//*[@id="root"]/div[1]/div[1]/div/header/div[4]/div/div[1]/div/a')
     ORDER_LINK_BUTTON = (By.XPATH, '//*[@id="root"]/div[1]/div[1]/div/header/div[4]/div/div[1]/div/a/div/p')
+    FAVORITES_LINK = (By.XPATH, '//*[@id="root"]/div[1]/div[1]/div/header/div[4]/div/div[2]/div/a')
+    FAVORITES_LINK_BUTTON = (By.XPATH, '//*[@id="root"]/div[1]/div[1]/div/header/div[4]/div/div[2]/div/a/div/p')
     # _BUTTON = (By.CSS_SELECTOR, '[class="jss458"]')
