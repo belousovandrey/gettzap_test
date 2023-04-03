@@ -8,9 +8,9 @@ class MainPageLocators:
     MAIN_LOGIN_BUTTON = (By.CSS_SELECTOR, '[class="MuiButtonBase-root MuiButton-root MuiButton-outlined customer-header-login__button-initial"]')
     LOGIN = (By.CSS_SELECTOR, '[class="MuiInputBase-input MuiInput-input text-field__input"]')
     PASSWORD = (By.CSS_SELECTOR, '[class="MuiInputBase-input MuiInput-input text-field__input password-input__input MuiInputBase-inputAdornedEnd"]')
-    LOGIN_BUTTON = (By.XPATH, '/html/body/div[3]/div[3]/div/div[2]/form/div[2]')
+    LOGIN_BUTTON = (By.CSS_SELECTOR, '[class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"]')
     LOGIN_ERROR = (By.CSS_SELECTOR, '[class="MuiFormHelperText-root Mui-error MuiFormHelperText-filled"]')
-    # registratin_form
+    # registration_form
     REG_USER_BUTTON = (By.CSS_SELECTOR, 'body > div.MuiDialog-root > div.MuiDialog-container.auth-dialog__dialog-container.MuiDialog-scrollPaper > div > div.dialog__content.auth-dialog__dialog-content > div.MuiFormControl-root.MuiFormControl-marginNormal.MuiFormControl-fullWidth > p:nth-child(2) > button')
     REG_COMPANY_BUTTON = (By.CSS_SELECTOR, 'body > div.MuiDialog-root > div.MuiDialog-container.auth-dialog__dialog-container.MuiDialog-scrollPaper > div > div.dialog__content.auth-dialog__dialog-content > div.MuiFormControl-root.MuiFormControl-marginNormal.MuiFormControl-fullWidth > p:nth-child(3) > button')
     FIO_USER = (By.CSS_SELECTOR, 'body > div.MuiDialog-root > div.MuiDialog-container.auth-dialog__dialog-container.MuiDialog-scrollPaper > div > div.dialog__content.auth-dialog__dialog-content > form > div.signup__inputs-slot > div:nth-child(1) > div > input')
@@ -18,4 +18,9 @@ class MainPageLocators:
     EMAIL_USER = (By.CSS_SELECTOR, 'body > div.MuiDialog-root > div.MuiDialog-container.auth-dialog__dialog-container.MuiDialog-scrollPaper > div > div.dialog__content.auth-dialog__dialog-content > form > div.signup__inputs-slot > div:nth-child(3) > div > input')
     AGREEMENT_BOX = (By.CSS_SELECTOR, 'body > div.MuiDialog-root > div.MuiDialog-container.auth-dialog__dialog-container.MuiDialog-scrollPaper > div > div.dialog__content.auth-dialog__dialog-content > label > span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1 > p')
     REGISTRATION_BUTTON = (By.CSS_SELECTOR, '#registration-btn')
-    LOGIN_BUTTON = (By.CSS_SELECTOR, '[class="jss458"]')
+    # link
+    ORDER_LINK = (By.XPATH, '//*[@id="root"]/div[1]/div[1]/div/header/div[4]/div/div[1]/div/a')
+    ORDER_LINK_BUTTON = (By.XPATH, '//*[@id="root"]/div[1]/div[1]/div/header/div[4]/div/div[1]/div/a/div/p')
+    FAVORITES_LINK = (By.XPATH, '//*[@id="root"]/div[1]/div[1]/div/header/div[4]/div/div[2]/div/a')
+    FAVORITES_LINK_BUTTON = (By.XPATH, '//*[@id="root"]/div[1]/div[1]/div/header/div[4]/div/div[2]/div/a/div/p')
+    # _BUTTON = (By.CSS_SELECTOR, '[class="jss458"]')
