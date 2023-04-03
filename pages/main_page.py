@@ -43,6 +43,8 @@ class MainPage(BasePage):
             link_href = simple_link.get_attribute('href')
         request = requests.get(link_href)
         if request.status_code == 200:
+            time.sleep(1)
+            self.window_scroll_100()
             self.element_is_visible(self.locators.ORDER_LINK_BUTTON).click()
             self.driver.switch_to.window(self.driver.window_handles[-1])
             url = self.driver.current_url
@@ -56,6 +58,8 @@ class MainPage(BasePage):
         link_href = simple_link.get_attribute('href')
         request = requests.get(link_href)
         if request.status_code == 200:
+            time.sleep(1)
+            self.window_scroll_100()
             self.element_is_visible(self.locators.FAVORITES_LINK_BUTTON).click()
             self.driver.switch_to.window(self.driver.window_handles[-1])
             url = self.driver.current_url

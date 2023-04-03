@@ -43,6 +43,13 @@ class BasePage:
     def go_to_element(self, element):
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
 
+    @allure.step('maximize_window')
+    def maximize_window(self):
+        self.driver.maximize_window()
+
+    def window_scroll_100(self):
+        self.driver.execute_script("window.scrollBy(0, -100);")
+
     @allure.step('action_double_click')
     def action_double_click(self, element):
         action = ActionChains(self.driver)
