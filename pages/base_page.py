@@ -47,6 +47,7 @@ class BasePage:
     def maximize_window(self):
         self.driver.maximize_window()
 
+    @allure.step('window_scroll_100')
     def window_scroll_100(self):
         self.driver.execute_script("window.scrollBy(0, -100);")
 
